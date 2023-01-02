@@ -1,0 +1,16 @@
+.profile-picture-container {
+    position: relative;
+    display: inline-flex;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.profile-picture-overlay {
+    position: absolute;
+    z-index: 1;
+    left: 63%;
+    top: 60%;
+    width: 25px;
+    height: 25px;
+}

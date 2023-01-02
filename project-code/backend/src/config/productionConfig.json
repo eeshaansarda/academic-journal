@@ -1,0 +1,14 @@
+{
+    "dbUrl": "mongodb://127.0.0.1:27017/code_review",
+    "baseSubmissionFolder": "./submissions",
+    "profilePictureFolder": "./profilePictures",
+    "supportingDocumentFolder": "./supportingDocuments",
+    "backendUrl": "http://localhost:8080",
+    "journalUrl": "https://cs3099user15.host.cs.st-andrews.ac.uk",
+    "journalId": "t15",
+    "buildDirectory": "../../../build",
+    "emailAddress": "cs3099journal15@outlook.com",
+    "sendGridApiKey": "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",
+    "logging": true,
+    "redisServer": "redis://127.0.0.1:6379"
+}

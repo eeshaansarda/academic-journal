@@ -1,0 +1,14 @@
+
+.rich-text-header a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.rich-text-body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #F1F1F1;
+    border-radius: 2px;
+    background: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    height: 20rem;
+}

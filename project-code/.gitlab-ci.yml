@@ -1,0 +1,36 @@
+image: node:17.4.0
+
+stages:
+    - build
+    - test
+
+cache:
+    paths: 
+        - frontend/node_modules
+        - backend/node_modules
+
+install_dependencies_backend:
+    stage: build
+    script:
+        - npm --prefix ./backend install 
+    artifacts:
+        paths:
+            - ./backend/node_modules
+
+
+install_dependencies_frontend:
+    stage: build
+    script:
+        - npm --prefix ./frontend install
+    artifacts:
+        paths:
+            - ./frontend/node_modules
+
+test_frontend:
+    stage: test
+    script: npm --prefix ./frontend/ test
+
+test_backend:
+    stage: test
+    script: npm --prefix ./backend/ run test_unit; npm --prefix ./backend/ run test_integration
+

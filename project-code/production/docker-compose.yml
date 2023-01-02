@@ -1,0 +1,20 @@
+version: "3"
+services:
+  mongo_cs3099:
+    image: mongo_cs3099
+    container_name: mongo_cs3099
+    command: ["mongod", "--config"]
+    ports:
+      - "21906:27017"
+    volumes:
+      - mongostorage:/data/db
+  code_review:
+    image: code_review
+    container_name: code_review
+    depends_on:
+      - mongo_cs3099
+    ports:
+      - "23413:8080"
+volumes:
+  mongostorage:
+    driver: local

@@ -1,0 +1,33 @@
+{
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./",
+    "paths": {
+      "@controllers/*": ["src/server/controllers/*"],
+      "@config/*": ["src/config/*"],
+      "@helper/*": ["src/helper/*"],
+      "@server/*": ["src/server/*"],
+      "@models/*": ["src/server/models/*"],
+      "@middleware/*": ["src/server/middleware/*"],
+      "@errors/*": ["src/server/errors/*"],
+      "@validation/*": ["src/server/validation/*"],
+      "@mocks/*": ["src/tests/mocks/*"],
+      "@tests/*": ["src/tests/*"]
+    },
+    "types": [],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "inlineSources": true,
+    "sourceMap": true
+  }
+}

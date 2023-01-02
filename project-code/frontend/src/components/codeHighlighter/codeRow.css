@@ -1,0 +1,29 @@
+
+.grey-code-row {
+    background-color: rgba(227, 227, 227, 0.2)
+}
+
+.code-row {
+    width: 100%;
+}
+
+.code-line-number-cell {
+    padding-right: 0.25rem;
+    border-right: 0.25px solid black;
+    width: 4rem;
+    color: #6c757d;
+}
+
+.code-content-cell {
+    padding-left: 1rem;
+}
+
+.code-highlighted-cell {
+    background-color: rgba(153, 204, 255, 0.2);
+}
+
+.code-comment-icon {
+    margin-right: 1rem;
+    color: #495057;
+    opacity: 0.5;
+}
